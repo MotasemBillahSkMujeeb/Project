@@ -4,7 +4,7 @@
 Analysis of customer behaviour, retention, and lifetime value for an e-commerce company to improve customer retention and maximize revenue
 ## Business Questions
 1. **Customer Segmentation:** Who are our most valuable customers?
-2. **Cohort Analysis:** How do differenct customer groups generate revenue?
+2. **Cohort Analysis:** How do different customer groups generate revenue?
 3. **Retention Analysis:** Which customers haven't purchased recently?
 
 ## Analysis Approach
@@ -18,7 +18,7 @@ Query: [1_customer_segmentation.sql](/1_customer_segmentation.sql)
 
 **Visualization:**
 
-<img src="\images\Screenshot 2025-06-24 121331.png" width="50%">
+<img src="\images\Customer Segmentation.png" width="50%">
 
 **Key Findings**
 - High-Value Segment (25% of customers) drive 66% of revenue ($135.4M)
@@ -27,17 +27,18 @@ Query: [1_customer_segmentation.sql](/1_customer_segmentation.sql)
 
 **Business Insights**
 - High-Value (66% revenue): Offer premium membership program to 12,372 VIP customers, as losing one customer significantly impacts revenue
-- Mid-Value (32% revenue): Create upgrade paths through personalized promotions, with potential $66.6M -> $135.4M revenue oppurtunity.
+- Mid-Value (32% revenue): Create upgrade paths through personalized promotions, with potential $66.6M -> $135.4M revenue opportunity.
 - Low-Value (2% revenue): Design re-engagement campaigns and price-sensitive promotions to increase purchase frequency
 
 ### 2. Cohort Analysis
 - Tracked revenue and customer count per cohorts
-- Cohort were grouped by year of first purchase
+- Cohorts were grouped by year of first purchase
 - Analyzed customer retention at a cohort level
 
 Query: [2_cohort_analysis.sql](/2_cohort_analysis.sql)
 
 **Visualization:**
+
 <img src="\images\customer revenue.png"
 width="50%">
 
@@ -59,7 +60,8 @@ Query: [3_retention_analysis.sql](/3_retention_analysis.sql)
 - Calculated customer-specific metrics
 
 **Visualization:**
-<img src="\images\Screenshot 2025-06-24 094530.png"
+
+<img src="\images\Customer Retention.png"
 width="50%">
 
 **Key Findings:**
@@ -68,21 +70,21 @@ width="50%">
 - Newer cohorts (2022-2023) show similar churn trajectories, signaling that without intervention future cohorts will follow the same pattern
 
 **Business Insights:**
-- Strengthen early engagement strategies to target the first 1-2 years with onboarding incentives, loyalty rewards, and personalized offers to imporove long-term retention.
-- Re-engage high-value churned customers by focusing on targeted win-back campaigns rather than broad rentention efforts, as reactivating valuable users may yield higher ROI.
+- Strengthen early engagement strategies to target the first 1-2 years with onboarding incentives, loyalty rewards, and personalized offers to improve long-term retention.
+- Re-engage high-value churned customers by focusing on targeted win-back campaigns rather than broad retention efforts, as reactivating valuable users may yield higher ROI.
 - Predict & preempt churn risk and use customer-specific warning indicators to proactively intervene with at-risk users before they lapse.
 
 ## Strategic Recommendations:
 
 1. **Customer Value Optimization** (Customer Segmentation)
-    - Launch VIP program for 12,372 high0value customers (66% revenue)
+    - Launch VIP program for 12,372 high-value customers (66% revenue)
     - Create personalized upgrade paths for mid-value segment ($66.6M -> $135.4M opportunity)
     - Design price-sensitive promotions for low-value segment to increase purchase frequency
 
 2. **Cohort Performance Strategy** (Customer Revenue by Cohort)
     - Target 2022-2024 cohorts with personalized re-engagement offers
     - Implement loyalty/subscription programs to stabilize revenue fluctuations
-    - Apply succussful strategies from high-spending 2016-2018 cohorts to newer customers
+    - Apply successful strategies from high-spending 2016-2018 cohorts to newer customers
 
 3. **Retention & Churn Prevention** (Customer Retention)
     - Strengthen first 1-2 year engagement with onboarding incentives and loyalty rewards
@@ -91,5 +93,5 @@ width="50%">
 
 ## Technical Details
 - **Database:** PostgreSQL
-- **Analysis Tools:** PostgreSQL
+- **Analysis Tools:** PostgreSQL, Dbeaver, PGadmin
 - **Visualization:** ChatGPT
